@@ -15,7 +15,7 @@ const channels = require("./channels.json");
 function getChannelName(channel) {
   // Your code here
 
-  let NameOfChannel = "name";
+  let NameOfChannel = ["name"];
   return channel[NameOfChannel];
 }
 
@@ -28,7 +28,7 @@ function getChannelName(channel) {
  ****************************************************************/
 function numberOfVideos(channel) {
   // Your code here
-  return channel["videoes"].length;
+  return channel["videos"].length;
 }
 // console.log(numberOfVideos(channels[0]))
 
@@ -58,8 +58,8 @@ function channelHasVideo(videoTitle, channel) {
  ****************************************************************/
 function getChannelByName(channelName, channels) {
   // Your code here
-  let NameOfChannel = "name";
-  return channels.find((channel) => channel[NameOfChannel] == ChanelName);
+
+  return channels.find((channel) => channel.name === channelName);
 }
 // console.log(getChannelByName("PowerfulJRE", channels))
 
